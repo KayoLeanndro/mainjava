@@ -17,10 +17,10 @@ public class AppEletrodomestico {
         eletrodomesticos[3] = objeto4;
 
         for (Eletrodomestico eletrodomestico : eletrodomesticos) {
-            System.out.println("ID: " + eletrodomestico.getCodigo());
-            System.out.println("Nome: " + eletrodomestico.getNome());
-            System.out.println("Voltagem: " + eletrodomestico.getPotencia());
-            System.out.println("Consumo: " + eletrodomestico.gastoMes(1.4f));
+            System.out.println("ID: " + eletrodomestico.getCode());
+            System.out.println("Nome: " + eletrodomestico.getName());
+            System.out.println("Voltagem: " + eletrodomestico.getPower());
+            System.out.println("Consumo: " + eletrodomestico.spentPerMonth(1.4f));
             System.out.println("------------");
         }
     }

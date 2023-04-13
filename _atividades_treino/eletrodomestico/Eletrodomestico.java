@@ -1,66 +1,66 @@
 package eletrodomestico;
 
 public class Eletrodomestico {
-    private int codigo;
-    private String nome;
-    private float potencia;
-    private float tempUtilizacaoDiaria;
+    private int code;
+    private String name;
+    private float power;
+    private float useForDay;
 
-    public Eletrodomestico(int codigo, String nome, float potencia, float tempUtilizacaoDiaria) {
-        this.codigo = codigo;
-        this.nome = nome;
-        this.potencia = potencia;
-        this.tempUtilizacaoDiaria = tempUtilizacaoDiaria;
+    public Eletrodomestico(int code, String name, float power, float useForDay) {
+        this.code = code;
+        this.name = name;
+        this.power = power;
+        this.useForDay = useForDay;
     }
 
-    public float wattsPorDia() {
-        float calculo = this.potencia * this.tempUtilizacaoDiaria;
-        return calculo;
+    public float wattsPerDia() {
+        float calculation = this.power * this.useForDay;
+        return calculation;
     }
-    public float wattsPorMes() {
-        float calculo = wattsPorDia() * 30;
-        return calculo;
+    public float wattsPerMes() {
+        float calculation = wattsPerDia() * 30;
+        return calculation;
     }
     public float wattsPorAno() {
-        float calculo = wattsPorMes() * 12;
-        return calculo;
+        float calculation = wattsPerMes() * 12;
+        return calculation;
     }
 
-    public float gastoMes(float precowatts) {
-        float calculo = wattsPorMes()/1000;
-        return calculo;
+    public float spentPerMonth(float precowatts) {
+        float calculation = wattsPerMes()/1000;
+        return calculation;
     }
 
-    public int getCodigo() {
-        return codigo;
+    public int getCode() {
+        return code;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public void setCode(int code) {
+        this.code = code;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public float getPotencia() {
-        return potencia;
+    public float getPower() {
+        return power;
     }
 
-    public void setPotencia(float potencia) {
-        this.potencia = potencia;
+    public void setPower(float power) {
+        this.power = power;
     }
 
-    public float getTempUtilizacaoDiaria() {
-        return tempUtilizacaoDiaria;
+    public float useForDay() {
+        return useForDay;
     }
 
-    public void setTempUtilizacaoDiaria(float tempUtilizacaoDiaria) {
-        this.tempUtilizacaoDiaria = tempUtilizacaoDiaria;
+    public void useForDay(float useForDay) {
+        this.useForDay = useForDay;
     }
 
 }
